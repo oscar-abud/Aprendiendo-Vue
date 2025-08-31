@@ -5,11 +5,11 @@
   })
 
   // Importando el componente V-model
-  import VModel from './V-model.vue'
+  import VModel from '../components/V-model.vue'
   // Importando el componente V-bind
-  import VBind from './V-bind.vue'
+  import VBind from '../components/V-bind.vue'
   // Importando el componente V-for
-  import VFor from './V-for.vue'
+  import VFor from '../components/V-for.vue'
 
 </script>
 <template>

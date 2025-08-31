@@ -1,5 +1,5 @@
 <script setup>
-import AprendiendoVue from './components/AprendiendoVue.vue'
+import AprendiendoVue from './pages/AprendiendoVue.vue'
 </script>
 
 <template id="container">
