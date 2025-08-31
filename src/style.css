@@ -59,6 +59,7 @@ button:focus-visible {
 
 .card {
   padding: 1em;
+  max-width: 100%;
 }
 
 #app {

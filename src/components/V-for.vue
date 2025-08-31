@@ -38,7 +38,7 @@
     li{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         list-style: none;
         text-align: left;
