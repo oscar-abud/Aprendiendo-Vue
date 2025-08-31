@@ -2,8 +2,8 @@
 import AprendiendoVue from './components/AprendiendoVue.vue'
 </script>
 
-<template>
-  <div>
+<template id="container">
+  <div class="logo-container">
     <a href="https://vite.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
