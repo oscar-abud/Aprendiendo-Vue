@@ -15,6 +15,7 @@ import VFor from './V-for.vue'
 </script>
 <template>
   <h1>{{ msg }}</h1>
+  
   <!-- Viendo el v-for -->
   <div class='card'>
     <VFor />
