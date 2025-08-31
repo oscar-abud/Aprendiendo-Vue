@@ -42,7 +42,7 @@ const name = ref('')
     </button>
     <p> {{ state ? 'Frutas mostradas' : 'Frutas ocultas' }} </p>
   </div>
-  <!-- Viendo el for -->
+  <!-- Viendo el v-for -->
   <div class='card'>
     <h2>Lista de frutas</h2>
       <ul v-if='state && fruits.length > 0'>
