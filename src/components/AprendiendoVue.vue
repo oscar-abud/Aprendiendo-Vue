@@ -25,11 +25,11 @@ const changeState= () => {
   }
 }
 
-// Lista de frutas como objetos
-const btn = ref(true)
+// Importando el componente V-model
+import VModel from './V-model.vue'
+// Importando el componente V-bind
+import VBind from './V-bind.vue'
 
-// State para v-model
-const name = ref('')
 
 </script>
 <template>
@@ -57,22 +57,12 @@ const name = ref('')
 
   <!-- Viendo el v-bind -->
   <div class="card">
-    <h2>Boton de seguir o siguiendo</h2>
-     <!-- El : es el v-bind: que permite dar una clase dinamica -->
-    <button
-      :class=" btn ? 'seguir' : 'siguiendo'"
-      @click="btn = !btn"
-    >
-      {{btn ? 'Seguir' : 'Siguiendo'}}
-    </button>
+    <VBind />
   </div>
 
   <!-- probando v-model -->
   <div class="card">
-    <h2>Probando v-model</h2>
-    <!-- name se estara actualizando en tiempo real bidireccionalmente -->
-    <input v-model.trim="name" placeholder="Escribe algo"/>
-    <p>{{ name == '' ? 'Escribe en el input' : 'Hola, '+ name}}</p>
+    <VModel />
   </div>
 
 </template>
@@ -81,10 +71,15 @@ const name = ref('')
 .read-the-docs {
   color: #888;
 }
+
 li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   list-style: none;
+  text-align: left;
+  gap: 10px;
+  margin: 7px 5px;
 }
-.seguir{
-  background-color: #053acd;
-}
+
 </style>
