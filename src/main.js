@@ -1,17 +1,20 @@
-import { createApp } from 'vue'
-import './style.css'
+import { createApp, h, provide } from 'vue'
+import { DefaultApolloClient } from '@vue/apollo-composable'
 import App from './App.vue'
-import { createPinia } from 'pinia'
-
-//Importamos el router
 import router from './router/index.js'
+import { createPinia } from 'pinia'
+import { apolloClient } from './apollo.js'
 
-const app = createApp(App)
+import './style.css'
 
-// Usando Pinia
+const app = createApp({
+  setup() {
+    // Inyectamos el cliente Apollo globalmente
+    provide(DefaultApolloClient, apolloClient)
+  },
+  render: () => h(App),
+})
+
 app.use(createPinia())
-
-// Usando el router
 app.use(router)
-
 app.mount('#app')

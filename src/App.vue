@@ -6,6 +6,7 @@
     <router-link to="/">Inicio</router-link>
     <router-link to="/slots">Slots</router-link>
     <router-link to="/pinia">Pinia</router-link>
+    <router-link to="/api">API GraphQL</router-link>
   </nav>
 
   <!-- Aquí se renderiza la página según la ruta -->
