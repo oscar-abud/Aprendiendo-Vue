@@ -23,7 +23,7 @@
       {{ state ? 'Ocultar frutas' : 'Mostrar frutas' }}
     </button>
     <p> {{ state ? 'Frutas mostradas' : 'Frutas ocultas' }} </p>
-    <h2>Lista de frutas</h2>
+    <h1>Lista de frutas</h1>
       <ul v-if='state && fruits.length > 0'>
         <li v-for="(fruit, index) in fruits" :key="index">
           Fruta: '{{ fruit }}', indice: '{{index}}'

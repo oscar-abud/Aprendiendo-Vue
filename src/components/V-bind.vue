@@ -5,7 +5,7 @@
 </script>
 
 <template>
-    <h2>Boton de seguir o siguiendo</h2>
+    <h1>Boton de seguir o siguiendo</h1>
      <!-- El : es el v-bind: que permite dar una clase dinamica -->
     <button
       :class=" btn ? 'seguir' : 'siguiendo'"

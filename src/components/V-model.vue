@@ -5,7 +5,7 @@
 </script>
 
 <template>
-    <h2>Probando v-model</h2>
+    <h1>Probando v-model</h1>
     <!-- name se estara actualizando en tiempo real bidireccionalmente -->
     <h2>{{ name == '' ? 'Escribe en el input' : 'Hola, '+ name}}</h2>
     <input v-model.trim="name" placeholder="Escribe algo"/>
