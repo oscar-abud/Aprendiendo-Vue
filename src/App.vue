@@ -4,7 +4,8 @@
 <template>
   <nav>
     <router-link to="/">Inicio</router-link>
-    <router-link to="/slots">Página 2</router-link>
+    <router-link to="/slots">Slots</router-link>
+    <router-link to="/pinia">Pinia</router-link>
   </nav>
 
   <!-- Aquí se renderiza la página según la ruta -->
