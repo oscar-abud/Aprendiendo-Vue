@@ -1,3 +1,10 @@
+<script setup>
+    import { useCounterStore } from '../stores/counter.js'
+
+    const counter = useCounterStore()
+</script>
+
 <template>
-    <h1>Hola</h1>
+    <p>Contador {{ counter.count }}</p>
 </template>
+

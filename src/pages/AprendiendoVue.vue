@@ -11,6 +11,9 @@
   // Importando el componente V-for
   import VFor from '../components/V-for.vue'
 
+  import { useCounterStore } from '../stores/counter.js'
+  const counter = useCounterStore()
+
 </script>
 <template>
 
