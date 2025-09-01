@@ -1,5 +1,6 @@
 <script setup>
 import AprendiendoVue from './pages/AprendiendoVue.vue'
+import AprendiendoSlots from './pages/AprendiendoSlots.vue'
 </script>
 
 <template id="container">
@@ -12,6 +13,8 @@ import AprendiendoVue from './pages/AprendiendoVue.vue'
     </a>
   </div>
   <AprendiendoVue msg="Vite + Vue" />
+  <hr>
+  <AprendiendoSlots />
 </template>
 
 <style scoped>
